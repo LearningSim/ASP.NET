@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="header">
+        <asp:ContentPlaceHolder ID="headerHolder" runat="server">
+            <h1>
+                Мой сайт</h1>
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div id="menu">
+        <asp:ContentPlaceHolder ID="menuHolder" runat="server">
+            <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
+            </asp:TreeView>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div id="content">
+        <div>
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+            </asp:SiteMapPath>
+        </div>
+        <asp:ContentPlaceHolder ID="contentHolder" runat="server">
+            Выберите пункт в меню слева
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

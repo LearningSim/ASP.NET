@@ -1,0 +1,11 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Main.master" AutoEventWireup="true" CodeFile="Nested.master.cs" Inherits="Nested" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="headerHolder" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="menuHolder" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="contentHolder" Runat="Server">
+</asp:Content>
+

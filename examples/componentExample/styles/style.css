@@ -1,0 +1,32 @@
+﻿html, body 
+{
+    margin: 0;
+    padding: 0;
+}
+
+#header
+{
+    background-color: Gray;
+    height: 60px;
+    text-align: center;
+}
+
+#header h1
+{
+    margin: 0;
+}
+
+#menu
+{
+    width: 20%;
+    padding: 10px;
+    float: left;
+    background-color: Yellow;
+}
+
+#content
+{
+    margin-left:20%;
+    padding:5px;
+    background-color: Lime;
+}
