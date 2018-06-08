@@ -13,6 +13,7 @@ public partial class SelectColor : System.Web.UI.Page
     }
     protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
     {
+		Trace.Warn("lol");
         form1.Style.Add(HtmlTextWriterStyle.BackgroundColor, DropDownList1.SelectedValue);
     }
 }

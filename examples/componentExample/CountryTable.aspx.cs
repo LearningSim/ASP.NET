@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web.UI;
 
-public partial class Content : Page
+public partial class CountryTable : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {

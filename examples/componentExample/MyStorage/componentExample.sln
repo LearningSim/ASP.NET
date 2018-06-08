@@ -1,7 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "componentExample", "..\", "{B8BCFAF3-2D0E-48B2-AAA3-FA434BD623C6}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "componentExample(1)", "..\", "{F14C7690-EFE0-4E20-84EF-D7BCE29D9005}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		ProjectReferences = "{A36F87DD-F3B4-4536-86B6-687A0F557548}|MyStorage.dll;"
@@ -20,6 +22,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "componentExample", "..\", "
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "1546"
+		SlnRelativePath = "..\..\componentExample\"
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStorage", "MyStorage.csproj", "{A36F87DD-F3B4-4536-86B6-687A0F557548}"
@@ -30,10 +33,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B8BCFAF3-2D0E-48B2-AAA3-FA434BD623C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8BCFAF3-2D0E-48B2-AAA3-FA434BD623C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8BCFAF3-2D0E-48B2-AAA3-FA434BD623C6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8BCFAF3-2D0E-48B2-AAA3-FA434BD623C6}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F14C7690-EFE0-4E20-84EF-D7BCE29D9005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14C7690-EFE0-4E20-84EF-D7BCE29D9005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14C7690-EFE0-4E20-84EF-D7BCE29D9005}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14C7690-EFE0-4E20-84EF-D7BCE29D9005}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{A36F87DD-F3B4-4536-86B6-687A0F557548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A36F87DD-F3B4-4536-86B6-687A0F557548}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A36F87DD-F3B4-4536-86B6-687A0F557548}.Release|Any CPU.ActiveCfg = Release|Any CPU

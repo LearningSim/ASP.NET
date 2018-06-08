@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CustomerManagementLINQ">
+  <DataContextMoniker Name="/CustomerManagementLINQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d9677459-aacc-440e-bef4-2aa8a010a7ca" absoluteBounds="1.625, 1.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/CustomerManagementLINQDataContext/Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ebe6a4d9-dfcf-4bfb-a022-7d36a2a543c7" absoluteBounds="1.6400000000000001, 2.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="05326d24-1135-4d99-94e9-b44cacbd16e5" absoluteBounds="5.375, 2.125, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/CustomerManagementLINQDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7eb309f4-f343-4a7a-97aa-f103a644ffb8" absoluteBounds="5.39, 2.585, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.625 : 2.98159912109375); (5.375 : 2.98159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CustomerManagementLINQDataContext/Country/Country_Customer" />
+      <nodes>
+        <classShapeMoniker Id="d9677459-aacc-440e-bef4-2aa8a010a7ca" />
+        <classShapeMoniker Id="05326d24-1135-4d99-94e9-b44cacbd16e5" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

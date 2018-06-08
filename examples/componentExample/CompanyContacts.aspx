@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.master" AutoEventWireup="true" CodeFile="CompanyContacts.aspx.cs" Inherits="CompanyContacts" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.master" AutoEventWireup="true" CodeFile="CompanyContacts.aspx.cs" Inherits="CompanyContacts" ValidateRequest="false" %>
 
 <%@ Register src="Person.ascx" tagname="Person" tagprefix="uc1" %>
 
