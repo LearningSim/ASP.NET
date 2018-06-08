@@ -28,6 +28,11 @@ public partial class UpdateCountries : Page
 			where c.ID.ToString() == formattedCountry.Attribute("ID").Value
 			select c;
 
+		Debug.WriteLine("withPhoneIds.Count() "+ formattedCountries.Count());
+		Debug.WriteLine("countries.Count() "+ countries.Count());
+
+		// db doesn't contain these countries, 
+		// so we'll add new records rather than updating
 		foreach (var formattedCountry in formattedCountries)
 		{
 			var country = new Country
