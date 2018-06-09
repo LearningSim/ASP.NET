@@ -30,3 +30,16 @@
     padding:5px;
     background-color: Lime;
 }
+
+.panelHeader
+{
+    color: Gray;
+    background-color: Yellow;
+    cursor:pointer;
+}
+.selectedPanelHeader
+{
+    color: Red;
+    background-color: Yellow;
+    cursor:pointer;
+}
