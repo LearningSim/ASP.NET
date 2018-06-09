@@ -5,6 +5,6 @@ public partial class CountryTable : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        DataBind();
+
     }
 }
