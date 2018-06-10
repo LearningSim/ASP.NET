@@ -75,8 +75,6 @@
                     <SortedDescendingCellStyle BackColor="#FFFDF8" />
                     <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                 </asp:GridView>
-                <asp:Timer ID="Timer1" runat="server" Interval="5000">
-                </asp:Timer>
             </ContentTemplate>
         </asp:UpdatePanel>
 
@@ -103,12 +101,6 @@
 		</asp:SqlDataSource>
     
     </div>
-    <asp:UpdateProgress ID="UpdateProgress1" runat="server" 
-        AssociatedUpdatePanelID="UpdatePanel1" DisplayAfter="10">
-        <ProgressTemplate>
-            Loading...
-        </ProgressTemplate>
-    </asp:UpdateProgress>
     </form>
 </body>
 </html>

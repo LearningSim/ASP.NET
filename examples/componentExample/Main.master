@@ -10,6 +10,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
     <div id="header">
         <asp:ContentPlaceHolder ID="headerHolder" runat="server">
             <h1>
