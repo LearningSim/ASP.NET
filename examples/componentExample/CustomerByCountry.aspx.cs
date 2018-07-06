@@ -3,14 +3,13 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Web.UI;
+using System.Web.UI.WebControls;
 
-public partial class CustomerByCountry : Page
-{
+public partial class CustomerByCountry : Page {
 	private SqlConnection con;
 	private DataSet dataSet;
 
-	void FillCountryList()
-	{
+	void FillCountryList() {
 		var sql = "SELECT ID, Name FROM Countries ORDER BY Name";
 		var cmd = new SqlCommand(sql, con);
 		var reader = cmd.ExecuteReader();
@@ -21,6 +20,13 @@ public partial class CustomerByCountry : Page
 
 		countries.DataBound += countries_DataBound;
 		countries.DataBind();
+
+		if (Session["country"] != null) {
+			foreach (ListItem item in countries.Items) {
+				item.Selected = item.Text == Session["country"].ToString();
+			}
+		}
+
 		reader.Close();
 	}
 
@@ -28,43 +34,45 @@ public partial class CustomerByCountry : Page
 		countries.Items.Insert(0, "Все страны");
 	}
 
-	void UpdateGrid()
-	{
-		var sql = @"SELECT Customers.ID, Customers.FirstName, Customers.LastName, Customers.Address, Customers.Phone, Customers.City, Customers.State, 
+	void UpdateGrid() {
+		dataSet = Cache["myDs"] as DataSet;
+
+		if (dataSet == null) {
+			var sql =
+				@"SELECT Customers.ID, Customers.FirstName, Customers.LastName, Customers.Address, Customers.Phone, Customers.City, Customers.State, 
 					Countries.Name as Country
 					from Customers 
 					left outer join Countries 
 					on Customers.CountryID = Countries.ID 
 					order by Customers.LastName";
 
-		var adapter = new SqlDataAdapter(sql, con);
-		dataSet = new DataSet();
-		adapter.Fill(dataSet, "Customer");
+			var adapter = new SqlDataAdapter(sql, con);
+			dataSet = new DataSet();
+			adapter.Fill(dataSet, "Customer");
+			Cache["myDs"] = dataSet;
+		}
 
 		customerGrid.DataSource = dataSet;
 		customerGrid.DataMember = "Customer";
 		customerGrid.DataBind();
 	}
 
-    protected void Page_Init(object sender, EventArgs e)
-    {
+	protected void Page_Init(object sender, EventArgs e) {
 		string conSettings = ConfigurationManager.ConnectionStrings["CustomerManagement"].ConnectionString;
 		con = new SqlConnection(conSettings);
 		con.Open();
-    }
+	}
 
-    protected void Page_Load(object sender, EventArgs e)
-    {
-	    if (!IsPostBack)
-	    {
+	protected void Page_Load(object sender, EventArgs e) {
+		if (!IsPostBack) {
 			FillCountryList();
 			UpdateGrid();
-	    }
-    }
+		}
+	}
+
 	protected void countries_SelectedIndexChanged(object sender, EventArgs e) {
 		UpdateGrid();
-		if (countries.SelectedIndex > 0)
-		{
+		if (countries.SelectedIndex > 0) {
 			dataSet.Tables["Customer"].DefaultView.RowFilter = string.Format("Country = '{0}'", countries.SelectedItem.Text);
 			customerGrid.DataSource = dataSet.Tables["Customer"].DefaultView;
 			customerGrid.DataBind();
@@ -72,8 +80,7 @@ public partial class CustomerByCountry : Page
 	}
 
 	protected void Page_Unload(object sender, EventArgs e) {
-		if (con != null)
-		{
+		if (con != null) {
 			con.Close();
 		}
 	}

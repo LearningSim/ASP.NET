@@ -3,8 +3,14 @@ using System.Web.UI;
 
 public partial class Main : MasterPage
 {
-    protected void Page_Load(object sender, EventArgs e)
-    {
+	public string userName;
 
-    }
+	protected void Page_Load(object sender, EventArgs e) {
+		if (Page.User.Identity.IsAuthenticated) {
+			userName = Page.User.Identity.Name;
+		}
+		else {
+			userName = "Аноним";
+		}
+	}
 }

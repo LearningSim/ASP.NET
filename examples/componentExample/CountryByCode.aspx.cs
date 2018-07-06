@@ -16,5 +16,6 @@ public partial class CountryByCode : Page
 			select c.Attribute("Name").Value;
 
 		countryName.Text = result.FirstOrDefault();
+		Session["country"] = countryName.Text;
 	}
 }

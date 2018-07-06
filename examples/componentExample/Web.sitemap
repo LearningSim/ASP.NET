@@ -4,5 +4,7 @@
         <siteMapNode url="~/Content.aspx" title="Content"  description="" />
         <siteMapNode url="~/CountryChooser.aspx" title="CountryChooser"  description="" />
         <siteMapNode url="~/SelectColor.aspx" title="SelectColor"  description="" />
+        <siteMapNode url="~/CustomerByCountry.aspx" title="CustomerByCountry"  description="" />
+        <siteMapNode url="~/CountryByCode.aspx" title="CountryByCode"  description="" />
     </siteMapNode>
 </siteMap>

@@ -1,0 +1,45 @@
+﻿html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	background-color: Gray;
+	height: 60px;
+	text-align: center;
+}
+
+#header h1 { margin: 0; }
+
+#menu {
+	width: 20%;
+	padding: 10px;
+	float: left;
+	background-color: rgb(132, 132, 132);
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#content {
+	margin-left: 20%;
+	padding: 5px;
+	background-color: rgb(213, 213, 213);
+}
+
+.panelHeader {
+	color: Gray;
+	background-color: Yellow;
+	cursor: pointer;
+}
+
+.selectedPanelHeader {
+	color: Red;
+	background-color: Yellow;
+	cursor: pointer;
+}
+
+#preview {
+	width: 60px;
+	height: 60px;
+	margin: 4px 0;
+}
