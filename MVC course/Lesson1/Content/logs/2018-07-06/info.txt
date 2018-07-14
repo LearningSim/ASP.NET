@@ -1,0 +1,57 @@
+2018-07-06 17:48:57.0045|INFO|Lesson1.App_Start.PreStartApp|Application PreStart
+2018-07-06 17:48:57.5265|INFO|Lesson1.MvcApplication|=====================
+2018-07-06 17:48:57.5265|INFO|Lesson1.MvcApplication|Application Start
+2018-07-06 17:48:58.0115|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:48:58.0225|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:48:59.9066|INFO|Lesson1.MvcApplication|Application Dispose
+2018-07-06 17:48:59.9066|INFO|Lesson1.MvcApplication|Application End
+2018-07-06 17:48:59.9066|INFO|Lesson1.MvcApplication|Application Dispose
+2018-07-06 17:49:01.5457|INFO|Lesson1.App_Start.PreStartApp|Application PreStart
+2018-07-06 17:49:01.6347|INFO|Lesson1.MvcApplication|=====================
+2018-07-06 17:49:01.6347|INFO|Lesson1.MvcApplication|Application Start
+2018-07-06 17:49:01.6857|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:49:01.6857|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:49:01.7587|INFO|Lesson1.MvcApplication|Application Error
+2018-07-06 17:50:19.8632|INFO|Lesson1.App_Start.PreStartApp|Application PreStart
+2018-07-06 17:50:20.2272|INFO|Lesson1.MvcApplication|=====================
+2018-07-06 17:50:20.2272|INFO|Lesson1.MvcApplication|Application Start
+2018-07-06 17:50:20.7343|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:50:20.7443|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:50:22.4804|INFO|Lesson1.MvcApplication|Application Dispose
+2018-07-06 17:50:22.4804|INFO|Lesson1.MvcApplication|Application End
+2018-07-06 17:50:22.4804|INFO|Lesson1.MvcApplication|Application Dispose
+2018-07-06 17:50:24.4115|INFO|Lesson1.App_Start.PreStartApp|Application PreStart
+2018-07-06 17:50:24.5325|INFO|Lesson1.MvcApplication|=====================
+2018-07-06 17:50:24.5325|INFO|Lesson1.MvcApplication|Application Start
+2018-07-06 17:50:24.5925|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:50:24.6045|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:50:24.7275|INFO|Lesson1.MvcApplication|Application Error
+2018-07-06 17:54:31.3706|INFO|Lesson1.App_Start.PreStartApp|Application PreStart
+2018-07-06 17:54:31.7686|INFO|Lesson1.MvcApplication|=====================
+2018-07-06 17:54:31.7686|INFO|Lesson1.MvcApplication|Application Start
+2018-07-06 17:54:32.2016|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:54:32.2016|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:54:34.0328|INFO|Lesson1.MvcApplication|Application Dispose
+2018-07-06 17:54:34.0328|INFO|Lesson1.MvcApplication|Application End
+2018-07-06 17:54:34.0328|INFO|Lesson1.MvcApplication|Application Dispose
+2018-07-06 17:54:35.3978|INFO|Lesson1.App_Start.PreStartApp|Application PreStart
+2018-07-06 17:54:35.4908|INFO|Lesson1.MvcApplication|=====================
+2018-07-06 17:54:35.4908|INFO|Lesson1.MvcApplication|Application Start
+2018-07-06 17:54:35.5508|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:54:35.5568|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:54:35.6358|INFO|Lesson1.MvcApplication|Application Error
+2018-07-06 17:55:23.4556|INFO|Lesson1.App_Start.PreStartApp|Application PreStart
+2018-07-06 17:55:23.9626|INFO|Lesson1.MvcApplication|=====================
+2018-07-06 17:55:23.9626|INFO|Lesson1.MvcApplication|Application Start
+2018-07-06 17:55:24.4406|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:55:24.4506|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:59:13.6957|INFO|Lesson1.App_Start.PreStartApp|Application PreStart
+2018-07-06 17:59:13.8148|INFO|Lesson1.MvcApplication|=====================
+2018-07-06 17:59:13.8148|INFO|Lesson1.MvcApplication|Application Start
+2018-07-06 17:59:13.8808|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 17:59:13.9078|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 18:01:19.0609|INFO|Lesson1.App_Start.PreStartApp|Application PreStart
+2018-07-06 18:01:19.1779|INFO|Lesson1.MvcApplication|=====================
+2018-07-06 18:01:19.1779|INFO|Lesson1.MvcApplication|Application Start
+2018-07-06 18:01:19.2999|INFO|Lesson1.MvcApplication|Application Init
+2018-07-06 18:01:19.3259|INFO|Lesson1.MvcApplication|Application Init
