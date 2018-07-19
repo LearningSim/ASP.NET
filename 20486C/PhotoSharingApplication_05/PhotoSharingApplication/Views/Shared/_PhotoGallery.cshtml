@@ -1,0 +1,13 @@
+﻿@model IEnumerable<PhotoSharingApplication.Models.Photo>
+
+@foreach (var photo in Model) {
+    <h3>@photo.Title</h3>
+
+    if (photo.PhotoFile != null) {
+        <img src="@Url.Action("GetImage", new {id = photo.PhotoID})" width="200"/>
+    }
+
+    <p>Created on: @Html.DisplayFor(model => photo.CreatedDate)</p>
+
+    @Html.ActionLink("Display", "Display", new {id = photo.PhotoID})
+}
