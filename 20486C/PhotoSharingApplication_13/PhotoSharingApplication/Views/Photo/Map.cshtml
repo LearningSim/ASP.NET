@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Map";
+    Layout = "~/Views/Shared/_MapLayout.cshtml";
+}
+
+<script>
+    let webApiUrl = '@Url.Content("~/api/photos")';
+    let pictureUrl = '@Url.Action("GetImage", "Photo")/';
+    let displayUrl = '@Url.Action("Display", "Photo")/';
+</script>
+
+<script src="@Url.Content("~/Scripts/MapDisplay.js")"></script>
+
+<div id="mapDiv" style="position: absolute; width: 650px; height: 400px"></div>
+
