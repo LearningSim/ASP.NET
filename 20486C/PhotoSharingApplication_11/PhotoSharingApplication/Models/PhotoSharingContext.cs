@@ -8,7 +8,7 @@ namespace PhotoSharingApplication.Models
 {
     public class PhotoSharingContext : DbContext, IPhotoSharingContext
     {
-        public PhotoSharingContext() : base()
+        public PhotoSharingContext() : base("PhotoSharingDB")
         {
             this.Database.CommandTimeout = 180;
         }
