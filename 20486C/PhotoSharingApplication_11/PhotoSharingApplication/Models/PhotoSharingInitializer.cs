@@ -156,7 +156,7 @@ namespace PhotoSharingApplication.Models
         //It is used to seed images
         private byte[] getFileBytes(string path)
         {
-            FileStream fileOnDisk = new FileStream(HttpRuntime.AppDomainAppPath + path, FileMode.Open);
+            FileStream fileOnDisk = new FileStream(HttpRuntime.AppDomainAppPath + path, FileMode.Open, FileAccess.Read);
             byte[] fileBytes;
             using (BinaryReader br = new BinaryReader(fileOnDisk))
             {
